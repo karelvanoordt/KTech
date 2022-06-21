@@ -9,7 +9,7 @@ private
   end
 
   def account_update_params
-    params.requier(:user).permit(:name, :email, :password, :password_confirmation, :current_pasword)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :current_pasword)
   end
 
 end
